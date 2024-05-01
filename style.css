@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'k2d';
-    src: url(fontes/K2D-Medium.ttf);
+    src: url(K2D-Medium.ttf);
 }
 
 @font-face {
     font-family: 'k2d_extrabold';
-    src: url(fontes/K2D-ExtraBold.ttf);
+    src: url(K2D-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: 'aspekta';
-    src: url(fontes/Aspekta-700.ttf);
+    src: url(Aspekta-700.ttf);
 }
 
 body {
@@ -24,6 +24,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 a {
@@ -54,7 +58,7 @@ nav {
     align-items: center;
     font-family: 'k2d';
     height: 50px;
-    width: 70%;
+    width: 1280px;
     border-radius: 20px;
     background-color: rgba(209, 209, 209, 0.1);
     backdrop-filter: blur(6px);
@@ -69,7 +73,8 @@ nav {
     gap: 2%;
 
     ul  {
-        margin-left: 19%;
+        margin-left: 10%;
+        margin-right: 6%;
         list-style: none;
         display: flex;
         opacity: 100%;
@@ -158,11 +163,13 @@ main {
     display: block;
   }
 
-  .container_hero {
+  .container_wrap {
     display: flex;
     flex-direction:row;
-    width: 70%;
+    width: 1280px;
     justify-content: space-between;
+    margin-top: 58px;
+
 
 }
 
@@ -171,51 +178,41 @@ main {
     width: 76%;
     height: 100%;
     align-self: center;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    h1{
+        font-size: 64px;
+        font-family: 'aspekta';
+        color: white;
+        margin: 0;
+    }
+
+    p{
+        font-family: 'aspekta';
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        width: 623px;
+    }
+
+    button{
+        height: 31px;
+        width: 128px;
+        cursor: pointer;
+        font-family: 'k2d_extrabold';
+        border-radius: 50000px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: none;
+        color: #09304A;
+    }
 }
 
-.right_side {
-    width: fit-content;
-    height: fit-content;
+.right_side{
+
+
 
 }
 
-.left_side_h1 {
-    font-size: 64px;
-    font-family: 'aspekta';
-    margin-left: 180px;
-    margin-top: 80px;
-    text-align: left;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    
-}
-
-.imgTigre {
-    margin-top: 50px;
-    margin-left: 163px;
-}
-
-.button_comecarAgora {
-    height: 35px;
-    width: 97px;
-    cursor: pointer;
-    font-family: 'k2d_extrabold';
-    width: fit-content;
-    border-radius: 50000px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: none;
-    color: #09304A;
-    margin-left: 99px;
-}
-
-.left_side_p {
-    font-family: 'aspekta';
-    color: white;
-    justify-content:center;
-    margin-left: 180px;
-    margin-right: 850px;
-    text-align: left;
-    font-size: 20px;
-    width: 623px;
- 
-}
