@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'k2d';
+    src: url(K2D-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'k2d_extrabold';
+    src: url(K2D-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'aspekta';
+    src: url(Aspekta-700.ttf);
+}
+
+@font-face {
+    font-family: 'k2d_bold';
+    src: url(K2D-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'inter_extra_bold';
+    src: url(Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'inter_medium';
+    src: url(Inter-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.gradiente {
+    background-image: url("background_gradiente_page_2.png");
+    height: 807px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    letter-spacing: 4px;
+    margin-left: 1.7%;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'k2d';
+    height: 50px;
+    width: 1280px;
+    border-radius: 20px;
+    background-color: rgba(209, 209, 209, 0.1);
+    backdrop-filter: blur(6px);
+    text-align: center;
+    padding: 20px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image: url(retangulo_logo.svg);
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-position-y: center;
+    background-size: contain;
+    gap: 2%;
+
+    ul  {
+        margin-left: 10%;
+        margin-right: 6%;
+        list-style: none;
+        display: flex;
+        opacity: 100%;
+        }
+    }
+
+
+
+main {
+    background-size: cover;
+    height: 804px;
+
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.logo_rp {
+    position: fixed;
+    height: auto;
+    left: 0px;
+    width: 250px;
+
+}
+
+.button_entrar {
+    height: 35px;
+    width: 97px;
+    cursor: pointer;
+    font-family: 'k2d_extrabold';
+    background-color: white ;
+    border-radius: 5000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    color: #09304A;
+}
+
+.button_cadastre-se {
+    height: 35px;
+    width: 97px;
+    cursor: pointer;
+    font-family: 'k2d';
+    width: fit-content;
+    border-radius: 50000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 000%, rgba(17,74,60,1) 100%);
+    color: white;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    width: fit-content;
+    z-index: 1;
+    margin-top: 10%;
+
+
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
