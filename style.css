@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'k2d';
-    src: url(K2D-Medium.ttf);
+    src: url(FONTES/K2D-Medium.ttf);
 }
 
 @font-face {
     font-family: 'k2d_extrabold';
-    src: url(K2D-ExtraBold.ttf);
+    src: url(FONTES/K2D-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: 'aspekta';
-    src: url(Aspekta-700.ttf);
+    src: url(FONTES/Aspekta-700.ttf);
 }
 
 @font-face {
     font-family: 'k2d_bold';
-    src: url(K2D-Bold.ttf);
+    src: url(FONTES/K2D-Bold.ttf);
 }
 
 @font-face {
     font-family: 'inter_extra_bold';
-    src: url(Inter-ExtraBold.ttf);
+    src: url(FONTES/Inter-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: 'inter_medium';
-    src: url(Inter-Medium.ttf);
+    src: url(FONTES/Inter-Medium.ttf);
 }
 
 * {
@@ -39,7 +39,7 @@ body {
 }
 
 .gradiente {
-    background-image: url("background_gradiente_pagina_1.png");
+    background-image: url("IMAGENS/background_gradiente_pagina_1.png");
     height: 807px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -297,7 +297,7 @@ main {
 }
 
 .page_3 {
-    background-image: url("background_gradiente_pagina_1.png");
+    background-image: url("IMAGENS/background_gradiente_pagina_1.png");
     height: 615px;
     background-repeat: no-repeat;
     background-size: cover;

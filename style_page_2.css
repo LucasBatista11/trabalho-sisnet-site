@@ -1,31 +1,31 @@
 @font-face {
     font-family: 'k2d';
-    src: url(K2D-Medium.ttf);
+    src: url(FONTES/K2D-Medium.ttf);
 }
 
 @font-face {
     font-family: 'k2d_extrabold';
-    src: url(K2D-ExtraBold.ttf);
+    src: url(FONTES/K2D-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: 'aspekta';
-    src: url(Aspekta-700.ttf);
+    src: url(FONTES/Aspekta-700.ttf);
 }
 
 @font-face {
     font-family: 'k2d_bold';
-    src: url(K2D-Bold.ttf);
+    src: url(FONTES/K2D-Bold.ttf);
 }
 
 @font-face {
     font-family: 'inter_extra_bold';
-    src: url(Inter-ExtraBold.ttf);
+    src: url(FONTES/Inter-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: 'inter_medium';
-    src: url(Inter-Medium.ttf);
+    src: url(FONTES/Inter-Medium.ttf);
 }
 
 * {
@@ -39,8 +39,8 @@ body {
 }
 
 .gradiente {
-    background-image: url("background_page_2.png");
-    height: 970px;
+    background-image: url("IMAGENS/background_gradiente_page_2.png");
+    height: 1720px;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -78,7 +78,7 @@ nav {
     text-align: center;
     padding: 20px;
     box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-image: url(retangulo_logo.svg);
+    background-image: url(IMAGENS/retangulo_logo.svg);
     background-repeat: no-repeat;
     background-position: initial;
     background-position-y: center;
@@ -209,7 +209,7 @@ main {
       width: 312px;
       height: 190px;
       background-color: white;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
       border-radius: 18px;
       font-family: K2D, sans-serif;
       padding: 20px;
@@ -244,6 +244,8 @@ main {
           font-family: K2D;
           padding: 0px;
           font-size: 14px;
+          border: none;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
   }
 
@@ -256,3 +258,105 @@ main {
     margin: 115px 0px 115px 0px;
 
 }
+
+.cards_wrap_page_2{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .div_card_page_2{
+      display: flex;
+      justify-content: center;
+      align-items:flex-start;
+      flex-direction: column;
+      width: 312px;
+      height: 190px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      border-radius: 18px;
+      font-family: K2D, sans-serif;
+      padding: 20px;
+      gap: 14px;
+  
+      h2{
+          font-size: 14px;
+          display: flex;
+          gap: 6px;
+          margin: 0;
+  
+      }
+  
+      h3{
+          margin: 0;
+      }
+  
+  }
+  
+  .buttons_teams{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+      button{
+          margin: 0;
+          width: 78px;
+          height: 32px;
+          border-radius: 2000px;
+          background-color: #0D4033;
+          color: white;
+          font-family: K2D;
+          padding: 0px;
+          font-size: 14px;
+          cursor: pointer;
+      }
+
+        button:hover {
+            opacity: 0.9;
+        }
+  }
+
+.container_cards_page_2 {
+    align-items: center;
+    width: 1280px;
+    height: 600px;
+    justify-items: center;
+    justify-content: center;
+    margin: 115px 0px 115px 0px;
+
+}
+
+
+.p_apostas_esportivas :hover{
+        opacity: 0.7;
+    }
+    
+.p_apostas_esportivas {
+        font-family: 'inter_extra_bold';
+        color: white;
+        font-size: 25px;
+        justify-self: start;
+        display:flex;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+.p_apostas_e-sportivas :hover{
+        opacity: 0.7;
+    }
+    
+.p_apostas_e-sportivas {
+        font-family: 'inter_extra_bold';
+        color: white;
+        font-size: 25px;
+        justify-self: start;
+        display:flex;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        cursor: pointer;
+        transition: .5s;
+    }
