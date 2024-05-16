@@ -39,8 +39,8 @@ body {
 }
 
 .gradiente {
-    background-image: url("background_gradiente_page_2.png");
-    height: 807px;
+    background-image: url("background_page_2.png");
+    height: 970px;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -60,16 +60,9 @@ a:hover {
 }
 
 .logo {
-    letter-spacing: 4px;
+    letter-spacing: 4x;
     margin-left: 1.7%;
     cursor: pointer;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    padding-top: 32px;
-
 }
 
 nav {
@@ -91,6 +84,7 @@ nav {
     background-position-y: center;
     background-size: contain;
     gap: 2%;
+    margin-top: 36px;
 
     ul  {
         margin-left: 10%;
@@ -119,6 +113,7 @@ main {
     height: auto;
     left: 0px;
     width: 250px;
+    padding-left:;
 
 }
 
@@ -173,3 +168,91 @@ main {
     display: block;
   }
 
+
+  .scrol_barrinha {
+    height: 800px;
+    width: 1440px;
+    color: aqua;
+
+}
+
+/*-------- scrollbar ------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFF;
+    border-radius: 5000px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, rgba(17,74,60,1) 000%, rgba(0,0,0,1) 100%);
+    border-radius: 50px;
+}
+
+.cards_wrap{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .div_card{
+      display: flex;
+      justify-content: center;
+      align-items:flex-start;
+      flex-direction: column;
+      width: 312px;
+      height: 190px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 18px;
+      font-family: K2D, sans-serif;
+      padding: 20px;
+      gap: 14px;
+  
+      h2{
+          font-size: 14px;
+          display: flex;
+          gap: 6px;
+          margin: 0;
+  
+      }
+  
+      h3{
+          margin: 0;
+      }
+  
+  }
+  
+  .buttons_teams{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+      button{
+          margin: 0;
+          width: 78px;
+          height: 32px;
+          border-radius: 2000px;
+          background-color: #0D4033;
+          color: white;
+          font-family: K2D;
+          padding: 0px;
+          font-size: 14px;
+      }
+  }
+
+.container_cards {
+    align-items: center;
+    width: 1280px;
+    height: 600px;
+    justify-items: center;
+    justify-content: center;
+    margin: 115px 0px 115px 0px;
+
+}

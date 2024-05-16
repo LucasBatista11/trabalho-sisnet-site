@@ -60,18 +60,11 @@ a:hover {
     opacity: 0.7;
 }
 
+
 .logo {
-    letter-spacing: 4px;
     margin-left: 1.7%;
-    cursor: pointer;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    padding-top: 32px;
-
-}
 
 nav {
     display: flex;
@@ -92,7 +85,9 @@ nav {
     background-position-y: center;
     background-size: contain;
     gap: 2%;
+    margin-top: 36px;
 
+    
     ul  {
         margin-left: 10%;
         margin-right: 6%;
@@ -219,14 +214,15 @@ main {
     }
 
     button{
-        height: 31px;
-        width: 128px;
+        height: 40px;
+        width: 160px;
         cursor: pointer;
         font-family: 'k2d_extrabold';
         border-radius: 50000px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border: none;
         color: #09304A;
+        font-size: 18px;
     }
 }
 
@@ -457,7 +453,7 @@ main {
 /*-------- scrollbar ------- */
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 8px;
     height: 5px;
 }
 
