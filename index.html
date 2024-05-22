@@ -7,24 +7,28 @@
     <title>RP.bet</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="style.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/14c47fafd2.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> <!--Ícones-->
 </head>
     <body>
+            <i class='fas fa-comment-alt botao_chat'></i> <!---Botão chat Flutuante--->
+            
         <main>
-            <div class="gradiente">
+            <div class="gradiente"> <!--imagem de fundo da página-->
+
                 <header>
-                        <nav>
-                                <a href="#" class="logo">
+                        <nav> <!--Barra de navegação-->
+                                <a href="#" class="logo"> 
                                     <img src="IMAGENS/rp.png">
                                 </a>
                             
                                 <ul class="nav-list">
-                                    <li><a href="#">CASSINO</a></li>
+                                    <li><a href="#cassino">CASSINO</a></li>
                                     <li><a href="index_page_2.html">ESPORTES</a></li>
-                                    <li><a href="index_page_2.html">E-SPORTS</a></li>
-                                    <li><a href="index_page_2.html">SUPORTE</a></li>
+                                    <li><a href="index_page_2.html#e-sports">E-SPORTS</a></li>
+                                    <li><a href="index_page_3.html">SUPORTE</a></li>
                                 </ul>
-                                <div class="dropdown">
+                                <div class="dropdown"> <!--div para selecionar os páises-->
                                     <span><svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_142_85)">
                                         <rect x="0.393921" y="0.79541" width="16.3333" height="16.3333" rx="8.16667" fill="#B5B5B5"/>
@@ -77,21 +81,21 @@
                         </nav>
                     </header>
 
-                        <div class="container_wrap">
+                        <div class="container_wrap"> <!--div para adicionar os textos e elementos-->
                             <div class="left_side">
-                                <h1>Queremos te dar <span style="color:#00DC83 ;">R$1.200</span> no <span style="color:#00DC83 ;">Primeiro</span> depósito</h1>
-                                <p>Aposta aí parceiro namoral, preciso dar almoço e janta paras as minhas criança</p>
+                                <h1>Queremos te dar <span style="color:#00DC83 ;">R$1.200</span> no <span style="color:#00DC83 ;">Primeiro</span> depósito</h1> <!--destacar a palavras-->
+                                <p>Primeiro abra sua conta usando o código promocional rpbonus. Depois Faça seu primeiro depósito e nós dobraremos este valor (até R$600,00 de bônus). Agora basta utilizar o valor total dos eu bônus. Atenção, o valor não poderá ser sacado até que você tenha apostado 5x o valor do bônus em sua carteira.</p>
                                 <button>Começar agora</button>
                             </div>
 
-                            <div class="right_side">
+                            <div class="right_side"> <!--div para anexar a imagem do tigre na direita-->
                                 <img src="IMAGENS/tiger_new.png" alt="tigre">
                             </div>
 
                         </div>
             </div>  
         </main>
-            <div class="page_2">
+            <div class="page_2"> <!--continuação da página onde falamos o que é a RP-->
                 <div class="container_wrap_2">
                     <div class="left_side_2">
                             <h1> | O que é a RP?</h1>
@@ -104,14 +108,14 @@
 
             </div>
 
-            <div class="page_3">
-                    <div class="search_box">
+            <div class="page_3" id="cassino"> <!--parte dos mini-games-->
+                    <div class="search_box"> <!--caixa de pesquisa-->
                         <input class="input_page_3"type="text" placeholder="PROCURE JOGOS"></input>
                         <a href="#" class="search_lupa">
                             <img  class="lupa" src="IMAGENS/lupa_page_3.svg" height="20" width="20">
                         </a>
                     </div>
-                           <p class="jogos_casuais_page_3">Jogos Casuais < ></p>
+                           <p class="jogos_casuais_page_3">Jogos Casuais <> </p> <!--simulação de um botão para navegalção entre os mini-games-->
 
                     <div class="jogos_page_3">
                         <img class="crash_img" src="IMAGENS/CRASH.svg">
@@ -122,22 +126,28 @@
                     </div>
             </div>
     
-        <footer>
-            <div class="footer-content">
-                <h3>RP bet.</h3>
-                <p>Sua diversão e seu futuro atrelados, através de momentos com responsabilidade e adrenalina.</p>
-                <ul class="socials">
+            <footer>
+                <div class="waves">
+                    <div class="wave" id="wave1"></div>
+                    <div class="wave" id="wave2"></div>
+                    <div class="wave" id="wave3"></div>
+                    <div class="wave" id="wave4"></div>
+                </div>
+                <ul class="social_icon">
                     <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
-            </div>
-            <div class="footer-bottom">
-                <p>copyright &copy;2024</p>
-            </div>
-        </footer>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Time</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <p>©2024 RP.bet | All Rights Reserved </p>
+            </footer>
             
     </body>
 </html>

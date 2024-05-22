@@ -1,3 +1,4 @@
+/*Família de fonte*/
 @font-face {
     font-family: 'k2d';
     src: url(FONTES/K2D-Medium.ttf);
@@ -38,7 +39,7 @@ body {
     margin: 0;
 }
 
-.gradiente {
+.gradiente /*Estilo do gradiente*/{
     background-image: url("IMAGENS/background_gradiente_pagina_1.png");
     height: 807px;
     background-repeat: no-repeat;
@@ -66,7 +67,7 @@ a:hover {
 }
 
 
-nav {
+nav /*estilo da barra de navegção*/{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -79,7 +80,7 @@ nav {
     text-align: center;
     padding: 20px;
     box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-image: url(retangulo_logo.svg);
+    background-image: url(IMAGENS/retangulo_logo.svg);
     background-repeat: no-repeat;
     background-position: initial;
     background-position-y: center;
@@ -88,7 +89,7 @@ nav {
     margin-top: 36px;
 
     
-    ul  {
+    ul /*estilo da ul*/{
         margin-left: 10%;
         margin-right: 6%;
         list-style: none;
@@ -110,7 +111,7 @@ main {
     margin-left: 32px;
 }
 
-.logo_rp {
+.logo_rp /*estilo da logo*/{
     position: fixed;
     height: auto;
     left: 0px;
@@ -118,7 +119,7 @@ main {
 
 }
 
-.textDeposito {
+.textDeposito /*estilo do texto do deposito*/{
     font-family: 'k2d';
     width: 804px;
     height: 122px;
@@ -128,7 +129,7 @@ main {
 }
 
 
-.button_entrar {
+.button_entrar /*estilo do botão de entrar*/{
     height: 35px;
     width: 97px;
     cursor: pointer;
@@ -140,7 +141,7 @@ main {
     color: #09304A;
 }
 
-.button_cadastre-se {
+.button_cadastre-se /*estilo do botão de cadastra-se*/{
     height: 35px;
     width: 97px;
     cursor: pointer;
@@ -155,7 +156,7 @@ main {
     padding-right: 27px;
 }
 
-.dropdown {
+.dropdown /*dropdown da seleção dos países*/{
     position: relative;
     display: inline-block;
     margin: 0;
@@ -179,7 +180,7 @@ main {
     display: block;
   }
 
-  .container_wrap {
+  .container_wrap /*lugar onde posicionamos os elementos da primeira página*/{
     display: flex;
     flex-direction:row;
     width: 1280px;
@@ -188,7 +189,7 @@ main {
 
 }
 
-.left_side {
+.left_side /*estilo da primeira parte da página */{
     flex-direction: column;
     width: 76%;
     height: 100%;
@@ -226,7 +227,7 @@ main {
     }
 }
 
-.left_side_2 {
+.left_side_2 /*estilo do titúlo da segunda parte da página*/{
     flex-direction: column;
     width: 76%;
     height: 100%;
@@ -256,7 +257,7 @@ main {
     }
 }
 
-.retangulo_paragrafo {
+.retangulo_paragrafo /*estilo do parágrafo da segunda parte da página*/{
 
         width: 1086px;
         height: 283px;
@@ -280,7 +281,7 @@ main {
     margin: 0;
 }
 
-.container_wrap_2 {
+.container_wrap_2 /*lugar onde posicionamos os elementos da segudna página*/{
     display: flex;
     padding: 0;
     margin: 0;
@@ -296,7 +297,7 @@ main {
     }
 }
 
-.page_3 {
+.page_3 /*fundo do terceiro pedaço da página*/{
     background-image: url("IMAGENS/background_gradiente_pagina_1.png");
     height: 615px;
     background-repeat: no-repeat;
@@ -308,7 +309,7 @@ main {
     width: 100%;
 }
 
-.search_box {
+.search_box /*caixa de pesquisa*/{
     position: absolute;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.200);
@@ -323,16 +324,16 @@ main {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-family: 'inter_medium';
     margin-top: 60px;
+    left: 50%;
 
-    
-    ::placeholder { 
+    ::placeholder /*opaciadade*/ { 
         color: white;
         filter: opacity(80%);
         padding-left: 15px;
     }
 
-    &:hover{
-        margin-left: 140px;
+    &:hover /*animação da barra de pesquisa*/{
+        left: 50%;
         transition: 0.2s linear;
     }
 
@@ -341,7 +342,7 @@ main {
     }
 }
 
-.input_page_3 {
+.input_page_3 /*input do "PROCURE JOGOS"*/{
     border: none;
     background: none;
     outline: none;
@@ -355,7 +356,7 @@ main {
     font-family: 'inter_medium';
 }
 
-.search_lupa {
+.search_lupa /*lupa*/{
     width: 40px;
     height: 20px;
     border-radius: 5000px;
@@ -366,7 +367,7 @@ main {
     
 }
 
-.search_box:hover> .input_page_3 {
+.search_box:hover> .input_page_3 /*final da animação*/{
     width: 240px;
     transition: .2s linear;
 }
@@ -378,7 +379,7 @@ main {
     display: flex;
 }
 
-.jogos_casuais_page_3:hover{
+.jogos_casuais_page_3:hover /*simulação de um botão para navegalção entre os mini-games "Jogos Casuais <>"*/{
     opacity: 0.7;
 }
 
@@ -398,7 +399,7 @@ main {
 }
 
 
-.crash_img, .double_img, .tigrinho_img, .rocket_img, .aviator_img {
+.crash_img, .double_img, .tigrinho_img, .rocket_img, .aviator_img /*enquadramentos das imagens dos mini-games*/{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border: 0;
     border-radius: 15px;
@@ -406,6 +407,8 @@ main {
     cursor: pointer;
     transition: 0.5s;
 }
+
+/*hoover para as imagens*/
 
 .crash_img:hover{
     size: 20%;
@@ -467,83 +470,167 @@ main {
     border-radius: 50px;
 }
 
+
+
+/*inicio do estilo do rodapé*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 footer {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(17,17,17,1) 70%);
-    height: auto;
-    width: 100;
-    font-family: 'k2d';
-    color: #fff;
-
-}
-
-.footer-content {
+    position: relative;
+    width: 1771px;
+    background: rgba(17,74,60,1);
+    min-height: 100px;
+    padding: 20px 50px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    margin-top: 0.5rem;
-}
-
-.footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-}
-
-.socials {
-    list-style: none;
+footer .social_icon,.menu{
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 1rem 0 1rem 0;
+    align-items: center;
+    margin: 10px 0;
 }
 
-.socials li{
-    margin: 0 10px;
+footer .social_icon li,.menu li{
+    list-style: none;
 }
 
-.socials a{
-    text-decoration: none;
+footer .social_icon li a, .menu li a{
+    font-size: 2em;
     color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
 }
 
-.socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
 }
 
-.socials a:hover i{
-    color: #051713;
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
 }
 
-.footer-bottom {
-    background: #000;
-    width: 100%;
-    padding: 20px 0;
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 1871px;
+    height: 100px;
+    background:url(IMAGENS/bg_green_wave.png);
+    background-size: 1000px 100px;
 }
 
-.footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4s;
-    font-weight: 200;
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 1000px;
+    }
+
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave 3s linear infinite;
+}
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}  
+
+/*fim do estilo do rodapé*/
+
+/*Animação Botão Chat*/
+@keyframes floating {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.botao_chat{
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    z-index: 120;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    background-color: #09304A;
+    border-radius: 50%;
+    animation: floating 6s ease-in-out infinite;
+    cursor: pointer;
 }
