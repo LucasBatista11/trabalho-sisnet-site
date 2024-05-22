@@ -536,12 +536,12 @@ footer p{
 
 footer .wave{
     position: absolute;
-    top: -100px;
+    top: -80px;
     left: 0;
     width: 1871px;
     height: 100px;
     background:url(IMAGENS/bg_green_wave.png);
-    background-size: 1000px 100px;
+    background-size: 1000px 80px;
 }
 
 footer .wave#wave1{
