@@ -66,6 +66,9 @@ a:hover {
     margin-left: 1.7%;
 }
 
+.header-desktop{
+
+}
 
 nav /*estilo da barra de navegção*/{
     display: flex;
@@ -103,7 +106,7 @@ nav /*estilo da barra de navegção*/{
 main {
     background-size: cover;
     height: 804px;
-
+    transition: all 0.4s ease;
 }
 
 .nav-list li{
@@ -242,7 +245,7 @@ main {
         font-family: 'k2d_bold' ;
         font-size: 70px;
         color:#051713;
-        margin-left: 91px ;
+        margin-left: 0px ;
         margin-top: 0;
         padding-top: 0;
     }
@@ -267,7 +270,7 @@ main {
         align-items: center;
         justify-self: center;
         border-radius: 30px;
-        margin-left: 80px;
+        margin-left: 0px;
         border-style: solid;
         border-color: #051713;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -281,14 +284,21 @@ main {
     margin: 0;
 }
 
+.page_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .container_wrap_2 /*lugar onde posicionamos os elementos da segudna página*/{
     display: flex;
     padding: 0;
     margin: 0;
     height: 655px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    width: 1280px;
     
     img{
         z-index: 1;
@@ -478,7 +488,6 @@ main {
 
 footer {
     position: relative;
-    width: 1771px;
     background: rgba(17,74,60,1);
     min-height: 100px;
     padding: 20px 50px;
@@ -538,7 +547,7 @@ footer .wave{
     position: absolute;
     top: -80px;
     left: 0;
-    width: 1871px;
+    width: 100%;
     height: 100px;
     background:url(IMAGENS/bg_green_wave.png);
     background-size: 1000px 80px;
@@ -634,3 +643,113 @@ footer .wave#wave4{
     animation: floating 6s ease-in-out infinite;
     cursor: pointer;
 }
+
+/*Ajuste desktop Header Mobile*/
+@media (width > 1328px) { 
+    .header-mobile{
+        display: none;
+    }
+
+    .off-canvas{
+        display: none;
+    }
+
+    .off-canvas-close{
+        display: none;
+    }
+}
+
+/* RESPONSIVO TABLET */
+
+@media (width < 1328px) {
+
+    .blur{
+        filter: blur(20px);
+    }
+
+    .off-canvas-close{
+        left: -100vw;
+        display: flex;
+        height: 100vh;
+        z-index: 100;
+        background-color: #0c3a55;
+        position: fixed;
+        width: 60%;
+        align-items: center;
+        font-family: 'k2d';
+        transition: left 0.6s ease;
+    }
+
+    .off-canvas{
+        display: flex;
+        height: 100vh;
+        z-index: 100;
+        background-color: #0c3a55;
+        position: fixed;
+        width: 60%;
+        align-items: center;
+        font-family: 'k2d';
+        left: 0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: left 0.6s ease;
+    }
+
+    .off-canvas h1{
+        top: 0;
+        right: 12px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .off-canvas ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .off-canvas ul li{
+        letter-spacing: 3px;
+        margin-left: 32px;
+        font-size: 7vw;
+    }
+    
+    
+
+    .header-desktop{
+        display: none;
+    }
+
+    .header-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 92vw;
+    }
+
+    .header-mobile nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-mobile a{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        height: 100%
+    }
+
+    .burguer img{
+       background-color: white;
+       border-radius: 8px;
+    }
+
+
+
+}
+
+
+/* RESPONSIVO MOBILE */

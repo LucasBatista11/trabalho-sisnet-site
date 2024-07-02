@@ -12,11 +12,34 @@
 </head>
     <body>
             <i class='fas fa-comment-alt botao_chat'></i> <!---Botão chat Flutuante--->
+
+            <!--OFF CANVAS MOBILE-->
+            <div class="off-canvas-close" id="off-Canvas">
+                <h1 style="position: absolute;" id="close-btn">X</h1>
+                <ul class="nav-list">
+                    <li><a href="#cassino">CASSINO</a></li>
+                    <li><a href="index_page_2.html">ESPORTES</a></li>
+                    <li><a href="index_page_2.html#e-sports">E-SPORTS</a></li>
+                    <li><a href="index_page_3.html">SUPORTE</a></li>
+                </ul>
+            </div>
             
         <main>
             <div class="gradiente"> <!--imagem de fundo da página-->
 
-                <header>
+                <!--HEADER MOBILE-->
+                <header class="header-mobile">
+                    <nav class="nav-mobile">
+                        <a href="#" class="logo-mobile"> 
+                            <img src="IMAGENS/rp.png">
+                        </a>
+                        <a href="#" class="burguer" id="menuBtn"> 
+                            <img src="IMAGENS/burguer-icon.svg">
+                        </a>
+                    </nav>
+                </header>
+
+                <header class="header-desktop">
                         <nav> <!--Barra de navegação-->
                                 <a href="#" class="logo"> 
                                     <img src="IMAGENS/rp.png">
@@ -80,6 +103,7 @@
 
                         </nav>
                     </header>
+
 
                         <div class="container_wrap"> <!--div para adicionar os textos e elementos-->
                             <div class="left_side">
@@ -149,5 +173,6 @@
                 <p>©2024 RP.bet | All Rights Reserved </p>
             </footer>
             
+            <script src="offcanvas.js"></script>
     </body>
 </html>
