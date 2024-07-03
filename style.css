@@ -743,12 +743,40 @@ footer .wave#wave4{
     }
 
     .burguer img{
-       background-color: white;
-       border-radius: 8px;
+       width: 35px;
+       height: 35px;
+       margin-top: 8px;
     }
 
+    .container_wrap {
+        width: 50%;
+        justify-content: center;
 
+    }
 
+    .left_side {
+        h1 {
+            font-size: 35px;
+        }
+    
+        p {
+            font-size: 14px;
+            width: 50vw;
+        }
+
+        button {
+            width: 140px;
+            height: 35px;
+            font-size: 90%;
+        }
+    }
+
+    .right_side {
+        img {
+            width: 320px;
+            height: 340px;
+        }
+    }
 }
 
 

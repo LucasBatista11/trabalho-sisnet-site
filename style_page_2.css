@@ -66,6 +66,14 @@ a:hover {
     cursor: pointer;
 }
 
+@media (width < 487px) {
+    .container_cards,.container_cards_page_2 {
+        width: 86vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+ }
 nav /*estilo da barra de navegção*/{
     display: flex;
     justify-content: flex-start;
@@ -286,6 +294,8 @@ main {
       }
   
   }
+
+
   
   .buttons_teams/*boões das apostas dos cards*/{
       width: 100%;
@@ -530,3 +540,4 @@ footer .wave#wave4{
     animation: floating 6s ease-in-out infinite;
     cursor: pointer;
 }
+
